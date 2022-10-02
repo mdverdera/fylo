@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <div className="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"></div>
 
         {/* Menu */}
-        <div className="flex items-center justify-center space-x-4 md:space-x-10 md:aboslute top-12 right-10">
+        <div className="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
           <Link href="#features">
             <a className="hover:text-accentCyan">Features</a>
           </Link>
