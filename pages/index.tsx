@@ -17,11 +17,11 @@ const Home: NextPage = () => {
 
         {/* Menu */}
         <div className="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
-          <Link href="#features">
+          <Link href="#features" scroll={false}>
             <a className="hover:text-accentCyan">Features</a>
           </Link>
 
-          <Link href="#testimonials">
+          <Link href="#testimonials" scroll={false}>
             <a className="hover:text-accentCyan">Testimonials</a>
           </Link>
 
@@ -312,6 +312,114 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-darkBlue2 text-white">
+        <div className="container mx-auto pt-12 px-5 pb-10">
+          {/* Flex Container For All Items */}
+
+          <div className="flex flex-col justify-between space-y-24 md:flex-row md:space-y-0">
+            {/* Phone and Email */}
+            <div className="mt-10 space-y-6">
+              {/* Phone */}
+              <div className="flex items-center space-x-3 md:-mt-10">
+                <div className="w-6">
+                  <picture>
+                    <img
+                      src="/img/icon-phone.svg"
+                      alt="phone"
+                      className="scale-10"
+                    />
+                  </picture>
+                </div>
+
+                <div>+1-543-123-4567</div>
+              </div>
+              {/* Email */}
+              <div className="flex items-center space-x-3 ">
+                <div className="w-6">
+                  <picture>
+                    <img
+                      src="/img/icon-email.svg"
+                      alt="phone"
+                      className="scale-10"
+                    />
+                  </picture>
+                </div>
+                <div>example@fylo.com</div>
+              </div>
+            </div>
+
+            {/* Menus */}
+            <div className="flex flex-col space-y-10 text-xl md:text-base md:space-x-20 md:space-y-0 md:flex-row">
+              <div className="flex flex-col space-y-3">
+                <Link href="#">
+                  <a>About</a>
+                </Link>
+                <Link href="#">
+                  <a>Jobs</a>
+                </Link>
+                <Link href="#">
+                  <a>Press</a>
+                </Link>
+                <Link href="#">
+                  <a>Blog</a>
+                </Link>
+              </div>
+              <div className="flex flex-col space-y-3">
+                <Link href="#">
+                  <a>Contact Us</a>
+                </Link>
+                <Link href="#">
+                  <a>Terms</a>
+                </Link>
+                <Link href="#">
+                  <a>Privacy</a>
+                </Link>
+              </div>
+            </div>
+
+            {/* Social */}
+            <div className="flex justify-center pb-10 space-x-3">
+              <div>
+                <Link href="#" passHref>
+                  <picture>
+                    <img
+                      src="/img/facebook.svg"
+                      alt="facebook"
+                      className="p-2 bg-darkBlue rounded-full ficon"
+                    />
+                  </picture>
+                </Link>
+              </div>
+
+              <div>
+                <Link href="#" passHref>
+                  <picture>
+                    <img
+                      src="/img/twitter.svg"
+                      alt="twitter"
+                      className="p-2 bg-darkBlue rounded-full ficon"
+                    />
+                  </picture>
+                </Link>
+              </div>
+
+              <div>
+                <Link href="#" passHref>
+                  <picture>
+                    <img
+                      src="/img/instagram.svg"
+                      alt="instagram"
+                      className="p-2 bg-darkBlue rounded-full ficon"
+                    />
+                  </picture>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
